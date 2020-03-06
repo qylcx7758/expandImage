@@ -1,0 +1,43 @@
+.handleimg-wrap {
+    width: 700px;
+    height: 600px;
+    border: 1px solid red;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    text-align: center;
+    transform: translate3d(-50%,-50%,0) scale(1);
+    overflow: auto;
+}
+
+.handleimg-box{
+    height: calc(100% - 45px);
+    /* border: 1px solid teal; */
+}
+.handleimg-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.handleimg-wrap .imgbtn{
+    height: 100%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.handleimg-wrap .close{
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: calc(100% - 60px);
+}
+
+.handleimg-wrap .downloadhref{
+    /* float: left; */
+    display: inline-block;
+    width: 50px;
+}
